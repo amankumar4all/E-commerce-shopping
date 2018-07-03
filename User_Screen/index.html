@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="topbar">
+            <div id="welcome">
+                <h1>Welcome User</h1>
+
+            </div>
+            <div id="header" class="bg">
+                <div class="left">
+                    <ul>
+                        <li><a id="home">Home</a></li>
+                        <li><a href="#" id="topSeller">Top Seller</a></li>
+                        <li><a href="#" id="newArrival">New Arrival</a></li>
+                        <li><a href="#" id="maxDiscount">Maximum Discount</a></li>
+                    </ul>
+
+                </div>
+                <div class="right">
+                    <ul>
+                        <input type="text" id="search" placeholder="Search Products">
+                        <li><a href="#" id="signUp">Sign Up</a></li>
+                        <li><a href="#" id="login">Login</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+            
+        <div id="HOME" >
+            <fieldset>
+                <legend>List of Products</legend>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Image</th>
+                                <th>Add To Cart</th>
+                            </tr>
+
+                        </thead>
+                        <tbody class="productList" id="blank">
+
+                        </tbody>
+                    </table>
+                
+            </fieldset>
+        </div>
+            
+
+        <div id="registration">
+            <div id="box">
+                <h2>Register Here</h2>
+                <input type="text" placeholder="enter first name" id="firstname" style="text-transform: uppercase">
+                <input type="text" placeholder="enter last name" id="lastname" style="text-transform: uppercase">
+                <input type="number" placeholder="age" id="age">
+                <input type="string" placeholder="Gender" id="gender" style="text-transform: uppercase">
+                <input type="email" placeholder="Email-id" id="email">
+                <hr/>
+                <input type="text" placeholder="Enter Password" id="password1">
+                <input type="text" placeholder="confirm password" id="password2">
+                <hr>
+                <button id="register">Register</button>
+
+            </div>
+        </div>
+        <div id="LOGIN">
+            <h2>Login to Place Order</h2>
+            <input type="email" placeholder="Email-id" id="email" required/>
+            <hr/>
+            <input type="text" placeholder="Enter Password" id="password" required/>
+            <hr>
+            <button id="login">Login</button>
+        </div>
+        
+        
+
+    </div>
+    
+</body>
+</html>

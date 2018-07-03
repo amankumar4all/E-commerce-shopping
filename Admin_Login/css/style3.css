@@ -1,0 +1,53 @@
+
+h1{
+    background-color: skyblue;
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+    text-align: center;
+}
+#container #header ul{
+    list-style: none;
+}
+#container #header ul li{
+    display: inline-block;
+}
+#container #header ul li a{
+    font-style: none;
+    text-decoration: white;
+    padding: 5px 10px;
+    background-color: gray;
+    color: aliceblue;
+}
+#container #header ul li a .home{
+margin-left: 20%;
+}
+#container #header ul li a .topseller{
+margin-left: 40%;
+}
+
+#topSellerDIV{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+/* for image */
+.icon{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#IMG{
+    width: 10px;
+    height: 10px;
+}
+#HOME tr th{
+    padding: 5px 70px;
+}

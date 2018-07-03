@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/ctrlTopSeller.js"></script>
+</head>
+<body>
+   <div id="container">
+          <div id="header">
+                 <h1>Top Seller Items</h1>
+          <ul id="bar">
+             <li><a href="#" id="homeLink">Home</a></li>
+             <li><a href="#" id="topsellerLink">Top Seller</a></li>
+             <li><a href="#" id="newarrivalLink">New Arrival</a></li>
+              <li><a href="#" id="outdatedLink">Out Dated</a></li>
+             <li><a href="#" id="logout">Log Out</a></li>
+         </ul>
+        </div>
+        <div>
+            <input type="number" placeholder="Item Id" id="itemId"/> &nbsp;
+            <input type="text" placeholder="Item Name" id="itemName"/> &nbsp;
+            <input type="number" placeholder="Item Price" id="itemPrice" /> &nbsp;
+            <input type="text" placeholder="Item Url" id="itemUrl"/> &nbsp; <br/>
+            <button id="add">Add Items</button>
+            <button id="savedItems">Saved Records</button>
+            <button id="update">Update Product</button>
+
+        </div>
+        <fieldset>
+                <legend>Records</legend>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>URL</th>
+                            <!-- <th>Image</th> -->
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productlist">
+                    </tbody>
+                </table>
+            </fieldset>
+
+
+    </div>
+</body>
+</html>

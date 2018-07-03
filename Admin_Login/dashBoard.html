@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/controller3.js"></script>
+</head>
+<body>
+
+    <div id="container">
+       <div id="header">
+        <h1>Welcome To DashBoard</h1>
+        <ul id="bar">
+            <li><a href="#" id="homeLink">Home</a></li>
+            <li><a href="#" id="topsellerLink">Top Seller</a></li>
+            <li><a href="#" id="newarrivalLink">New Arrival</a></li>
+            <li><a href="#" id="outdatedLink">Out Dated</a></li>
+            <li><a href="#" id="logout">Log Out</a></li>
+        </ul>
+       </div>
+
+       <div id="NAVContent">
+
+       
+       <div id="home">
+       <div id="addItems">
+        <input type="number" required placeholder="Item Id" id="itemId"  /> &nbsp;
+        <input type="text" placeholder="Item Name" id="itemName" required /> &nbsp;
+        <input type="number" placeholder="Item Price" id="itemPrice" required /> &nbsp;
+        <input type="text" placeholder="Item Url" id="itemUrl" required /> &nbsp;
+        <button id="add">Add Items</button> &nbsp;
+        <button id="search">Search By Id</button>
+        <button id="showAll">Show All Products</button>
+        <button id="savedItems">Saved Items</button>
+        <button id="update">Update Product</button>
+    </div>
+
+    <fieldset id="tableBorder" >
+        <legend>Total Items</legend>
+        <table border="1" id="table">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Url</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="productList">
+            </tbody>
+        </table>
+    </fieldset>
+    <div id="searchResultDiv" class="hide">
+        <h2>Search Result is </h2><h4> <span id="searchResult"></span></h4>
+        <div id="resultIMAGE"></div>
+    </div>
+    </div>
+
+    
+
+
+    
+</div>
+ </div>   
+</body>
+</html>
